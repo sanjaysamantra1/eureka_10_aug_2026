@@ -12,4 +12,8 @@ Tools & Softwares
 
 
 3. Create GitHub Account, install git software & clone the below repository
-   a. 
+   a. install git software (https://git-scm.com/install/windows)
+   b. clone the folder
+      git clone https://github.com/sanjaysamantra1/eureka_10_aug_2026
+   c. To get the latest content from github
+       git pull
