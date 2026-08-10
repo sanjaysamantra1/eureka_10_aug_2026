@@ -17,3 +17,44 @@ Tools & Softwares
       git clone https://github.com/sanjaysamantra1/eureka_10_aug_2026
    c. To get the latest content from github
        git pull
+
+
+
+Web Development
+===============
+-Developing Websites
+
+
+1. FrontEnd : User Interface ( Look & feel )
+        HTML : Content (button, div, paragraph, image, table, list, form, audion)
+        CSS :  Styling ( Border , Background, color, margin, padding )
+        Bootstrap : CSS Library ( pre-defined css classes )
+        JavaScript : behaviour of a webpage
+        Angular/React : Javascript frameworks ( RAD, CLI , Routing, Form, HTTP )
+
+2. BackEnd : Develop REST APIs
+             https://fakestoreapi.com/products ( API to fetch products)
+
+3. DataBase : Holds the data ( oracle , mySql, mongoDB )
+
+
+
+Product List Page
+=================
+1. Create an HTML File ( product_list.html )
+
+2.  !  ( Emmet / shortcuts ) add Boilerplate code
+    https://docs.emmet.io/cheat-sheet/
+
+3. Add HTMl, CSS , Javascript code in product_list.html
+
+4. To Open/Run HTML File in Browser
+   a. install vscode extension ( open in browser / live server )
+   b. alt+b  /  alt+shift+b
+
+
+
+Assignments
+===========
+1. Display List of country names  ( ol , li )
+2. Display List of country names as a dropdown (select, option)
