@@ -1,0 +1,15 @@
+Tools & Softwares
+=================
+1. NodeJS
+   https://nodejs.org/en/download
+
+   To verify NodeJs in installed , Run the below command in terminal/command prompt
+   node -v
+
+
+2. Visual Studio Code (Code Editor)
+   https://code.visualstudio.com/download
+
+
+3. Create GitHub Account, install git software & clone the below repository
+   a. 
