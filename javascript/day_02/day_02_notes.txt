@@ -1,0 +1,65 @@
+Emmets / Shortcuts
+==================
+https://docs.emmet.io/cheat-sheet/
+
+!   HTML-5 Code
+
+h1{Let's Learn Shortcuts}
+
+ul>li*5{Country-$}
+
+select>option*10{Country-$}
+
+table>tbody>tr*10>td*5{Data-$}
+
+button.btn.btn-primary{primary button}
+
+
+
+How to use CSS in HTML Files
+============================
+1. inline css 
+   style attribute , Element/Tag Level CSS
+   ex: <h2 style="color:red">CSS is used for styling web pages</h2>
+
+2. internal css
+   <style> Tag , Page/File Level css
+
+3. external css (Application/Project Level css)
+   a. create a separate .css file (styles.css)
+   b. include that css file into HTML file using <link>
+
+
+
+
+How to use Bootstrap in HTML Files
+==================================
+-Bootstrap is a CSS Library
+-Has lot of pre-defined css classes ( .text-center , btn , btn-success, table)
+-Maintained by Twitter
+-Bootstrap 5 is the latest version ( 5.3.8 )
+-Official Link: https://getbootstrap.com
+
+Add CDN link of bootstrap in HTML file using <link>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+Types of Javascript
+===================
+1. internal Javascript
+   <script></script>  Page/File Level 
+
+2. external Javascript
+   a. create a .js file and write Javascript code ( addition.js )
+   b. include that .js file into HTML file using <script></script>
+
+
+
+Assignments
+===========
+1. Learn HTML Input types
+    https://www.w3schools.com/html/html_form_input_types.asp
+
+2. Learn HTML input attributes
+    https://www.w3schools.com/html/html_form_attributes.asp    
