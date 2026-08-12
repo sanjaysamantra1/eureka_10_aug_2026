@@ -7,3 +7,19 @@ Math :  max() min() sqrt() cbrt()
 Array :  push() pop() slice() filter() map()
 Object :  assign()  groupBy()
 JSON :  stringify() parse()
+
+
+window methods
+============== 
+alert() : Display Informative message
+          Message + ok
+
+confirm() : User Confirmation
+            Message + ok(true)   cancel(false)
+
+prompt() : To Collect user input 
+           inputbox + message + ok,cancel     
+
+NOte: window object methods can be used directly     
+      window.alert(msg);  // yes
+      alert(msg);         // yes     
