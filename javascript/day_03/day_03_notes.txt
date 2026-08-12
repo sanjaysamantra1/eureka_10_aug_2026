@@ -23,3 +23,35 @@ prompt() : To Collect user input
 NOte: window object methods can be used directly     
       window.alert(msg);  // yes
       alert(msg);         // yes     
+
+
+
+
+Datatypes
+=========
+typeof is used to identify datatype of a value
+
+1. Primitive
+        number: 5, 5.4 , -2.3 , 8.111111
+        string: 'virat' '10' 'true' ''
+        boolean: true  false
+        undefined: undefined
+        bigint
+        symbol
+
+2. non-Primitive
+        Object: {}   []
+
+
+
+undefined  vs  null
+===================
+1. when a variable is declared without any value, bydefault its value becomes 'undefined'
+   null is a valid value 
+    let a;
+    let b = null;
+    console.log('a: ', a);
+    console.log('b: ', b);
+
+2. typeof undefined;   // undefined
+    typeof null;   // Object
