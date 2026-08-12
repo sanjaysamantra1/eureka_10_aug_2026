@@ -1,0 +1,9 @@
+Most Commonly Used Javascript Objects
+=====================================
+console : log() warn() error() table() time() timeEnd()
+document : write() getElementById() querySelector()
+window :  alert()  prompt()  confirm()
+Math :  max() min() sqrt() cbrt()
+Array :  push() pop() slice() filter() map()
+Object :  assign()  groupBy()
+JSON :  stringify() parse()
