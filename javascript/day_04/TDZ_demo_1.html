@@ -1,0 +1,11 @@
+<script>
+    console.log(`a: ${a}`); // a = undefined , 'a' can be accessed even before it's declaration line (Hoisting)
+    // console.log(`b: ${b}`); // 'b' can't be accessed here, reason: 'b' Temporal Dead Zone, 'b' is not available to be used
+    // console.log(`c: ${c}`); // 'c' can't be accessed here, reason: 'c' is in Temporal Dead Zone, 'c' is not available to be used
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`a: ${a}`); // 10
+    console.log(`b: ${b}`); // 20
+    console.log(`c: ${c}`); // 20
+</script>

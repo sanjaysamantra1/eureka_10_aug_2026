@@ -1,0 +1,29 @@
+<script>
+    var a = 10;   // global
+    let b = 20;
+    const c = 30;
+    console.log(`Global Scope a: ${a}`);
+    console.log(`Global Scope b: ${b}`);
+    console.log(`Global Scope c: ${c}`);
+
+    function f1() {
+        let d = 40;   // function 
+        console.log('f1 starts...')
+        console.log(`function f1 Scope a: ${a}`);
+        console.log(`function f1 Scope b: ${b}`);
+        console.log(`function f1 Scope c: ${c}`);
+        console.log(`function f1 Scope d: ${d}`);
+        console.log('f1 ends...')
+    }
+    f1();
+
+    function f2() {
+        console.log('f2 starts...')
+        console.log(`function f2 Scope a: ${a}`);
+        console.log(`function f2 Scope b: ${b}`);
+        console.log(`function f2 Scope c: ${c}`);
+        // console.log(`function f2 Scope d: ${d}`);
+        console.log('f2 ends...')
+    }
+    f2();
+</script>

@@ -1,0 +1,21 @@
+<script>
+    // 'var' variables don't support block scope
+    // a 'var' variable declared inside a block is accessible outside the block
+
+    function test() {
+        var a = 10;  // 'a' is function scoped & cannot be used outside the function
+
+        {   // Block-1
+            var name = 'sanjay';
+            console.log('Name in block-1: ', name)
+        }
+        {   // Block-2
+            console.log('Name in block-2: ', name)
+        }
+
+        console.log('Name in Function: ', name)
+    }
+    test()
+
+    console.log('Name in Global Scope: ', name)
+</script>
