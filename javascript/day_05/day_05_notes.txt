@@ -1,0 +1,79 @@
+How Javascript Works
+====================
+-Javascript code gets executed in 2 steps
+    1. Memory Creation 
+            a. memory gets created for all the variables (var,let,const)
+            b. 'var' variables 'undefined' value is assigned
+                let,const variables will have no value assigned  
+    2. Code Execution  (Code gets executed line by line)
+
+-Global Execution Context (anonymous)
+-Function Execution Context (Function Name)
+
+
+
+Hoisting
+========
+-Javascript code gets executed in 2 steps (1. memory creation 2. code execution)
+-in Memory creations phase javascript creates memory for all(var,let,const) variables
+ it assigns 'undefined' value only for 'var' variables
+ let & const variables will have no value
+-this is called Hoisting
+-a variable can be accesses before its actual initialization
+
+
+Temporal Dead zone
+==================
+-Javascript code gets executed in 2 steps (1. memory creation 2. code execution)
+-in Memory creations phase javascript creates memory for all(var,let,const) variables
+ it assigns 'undefined' value only for 'var' variables
+ let & const variables will have no value
+-let & const variables can be used only after their actual initialization
+ if we try to access them before the line where they are actually initialized, we see error
+ 
+
+
+functions
+=========
+-A block of code that can be re-used
+
+1. Function Declaration
+2. Function Expression
+3. Arrow Function
+
+
+Function Declaration  vs  Function Expression
+==============================================
+1. Function Declarations are named, Function Expressions are anonymous
+2. Function Declarations are hoisted, Function Expressions are not hoisted
+
+
+Arrow Function
+==============
+-Shorter in Syntax
+-anonymous
+-are not hoisted
+-function keyword is not used
+-function body is optional
+-return is optional
+
+
+HigherOrder Function: A function that takes another function as arguement 
+CallBack Functon: A function that is passed as arguement to another function
+
+in this example map() is a higherOrder and incrementBy5() is callback 
+    function incrementBy5(ele) {
+        return ele + 5;
+    }
+    let result = arr.map(incrementBy5);
+
+
+Assignments
+===========
+1. take 3 numbers , find the largest number among them
+2. take 3 subject marks (math,computer, physics) , find total and avergae mark
+   calculate grade:
+      avg>80  A
+      avg>60  B
+      avg>40  C
+      otherwise  Fail

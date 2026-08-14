@@ -1,0 +1,25 @@
+<script>
+    console.log('Global Code starts here...')
+    var a = 10;
+    let b = 20;
+    console.log(`a is ${a}`)
+    console.log(`b is ${b}`)
+
+    function f2(){
+        let d = 40;
+        console.log('F2 starts...')
+        console.log(`d is ${d}`);
+        console.log('F2 ends...')
+    }
+    function f1(){
+        let c = 30;
+        console.log('F1 starts...')
+        console.log(`c is ${c}`);
+        f2();
+        console.log('F1 ends...')
+    }
+    f1();
+    console.log('Global Code ends here...')
+
+    var courseName = 'Angular';
+</script>
