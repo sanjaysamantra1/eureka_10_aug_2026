@@ -1,0 +1,11 @@
+<script>
+    console.log('Global Scope:: ', this); // this = window
+
+    class Student {
+        getName() {
+            console.log(this); // this = Student
+        }
+    }
+    let std = new Student();
+    std.getName()
+</script>
