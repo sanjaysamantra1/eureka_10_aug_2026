@@ -1,0 +1,23 @@
+<script>
+    class ShoppingCart {
+        items = ['Laptop', 'Keyboard', 'Mouse'];
+        constructor(name) {
+            this.name = name;
+        }
+        showItems() {
+            console.log('showItems: ', this); // this = ShoppingCart
+
+            this.items.forEach(function (item) {
+                console.log(this)
+                // console.log(` ${this.name} has ${item} in the cart`)
+            });
+
+            /* this.items.forEach(item => {
+                console.log(this)
+                console.log(` ${this.name} has ${item} in the cart`)
+            }); */
+        }
+    }
+    let cartObj = new ShoppingCart('Archit');
+    cartObj.showItems();
+</script>
