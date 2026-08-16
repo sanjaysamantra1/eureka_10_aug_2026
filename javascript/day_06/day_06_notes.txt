@@ -8,3 +8,4 @@
 Arrow function limitations
 ==========================
 1. arrow functions shouldn't be used as object methods
+2. Arrow functions shouldn't be used as event listeners
