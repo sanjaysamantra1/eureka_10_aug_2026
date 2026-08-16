@@ -9,3 +9,12 @@ Arrow function limitations
 ==========================
 1. arrow functions shouldn't be used as object methods
 2. Arrow functions shouldn't be used as event listeners
+
+
+Arrow Function Benefits
+=======================
+Regular Function :  this = how/where the function is invoked
+Arrow Function :  this = where the function is written
+
+Note: arrow functions dont have their own 'this' , they use 'this' from the lexical scope
+ (the place where arrow function is written)
