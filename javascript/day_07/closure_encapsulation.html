@@ -1,0 +1,27 @@
+<script>
+    // Encapsulation = Dont expose the data, expose the member functions
+
+    let account = { accNo: 12345, accBal: 3000 };
+    console.log(`Account# ${account.accNo} has ${account.accBal} Balance`); // read
+    account.accBal = -5000; // write
+    console.log(`Account# ${account.accNo} has ${account.accBal} Balance`); // read
+
+
+    function openAccount(initialBal) {
+        let accNo = 112233;
+        let accBal = initialBal;
+        return {
+            deposit: function (amtToDeposit) {
+                accBal = accBal + amtToDeposit;
+            },
+            displayAccountInfo: function () {
+                console.log(`Account: ${accNo} ,  Balance:${accBal}`); // read
+            }
+        }
+    }
+    let encapsulatedAccount = openAccount(5000);
+    console.log(encapsulatedAccount);
+    encapsulatedAccount.displayAccountInfo();
+    encapsulatedAccount.deposit(2000)
+    encapsulatedAccount.displayAccountInfo();
+</script>
