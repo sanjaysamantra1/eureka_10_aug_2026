@@ -1,0 +1,5 @@
+closure
+=======
+-an inner function retains access to its outer function's variables
+-closure scope will not be there for outer functions
+-
