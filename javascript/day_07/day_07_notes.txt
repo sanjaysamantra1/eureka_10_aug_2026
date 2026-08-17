@@ -2,4 +2,9 @@ closure
 =======
 -an inner function retains access to its outer function's variables
 -closure scope will not be there for outer functions
--
+-closure scope will be there for inner functions only if the function access's outer function's data
+
+
+usecase
+=======
+-closure is sued for data encapsulation
