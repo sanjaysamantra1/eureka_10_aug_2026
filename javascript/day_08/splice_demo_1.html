@@ -1,0 +1,13 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai']
+
+    // splice(ind , deleteCount , ...elements to add)
+    cars.splice(1, 2, 'Toyota');
+    console.log(cars); // ['Tata', 'Toyota', 'Hyundai']
+
+    // toSpliced() doesn't modify the original array, makes the changes in a new array
+    let arr1 = [10, 20, 30, 40, 50]
+    let arr2 = arr1.toSpliced(1, 3, 25, 35);
+    console.log('arr1: ', arr1)  // [10, 20, 30, 40, 50]
+    console.log('arr2: ', arr2)  // [10, 25, 35, 50]
+</script>
