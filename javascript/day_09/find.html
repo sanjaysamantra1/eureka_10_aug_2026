@@ -7,8 +7,23 @@
         { id: 5, name: 'Karan Singh', role: 'Manager', salary: 52000, status: 'Active', gender: 'male' },
         { id: 6, name: 'Neha Gupta', role: 'Tester', salary: 72000, status: 'Active', gender: 'female' }
     ];
-
     // display the first female employee details
     let first_female_emp = employees.find((emp) => emp.gender == 'female');
     console.log('first_female_emp: ', first_female_emp)
+
+    // display the index/position of first female employee 
+    let first_female_emp_ind = employees.findIndex((emp) => emp.gender == 'female');
+    console.log('first_female_emp_ind: ', first_female_emp_ind)
+
+    // display the last female employee details
+    let last_female_emp = employees.findLast((emp) => emp.gender == 'female');
+    console.log('last_female_emp: ', last_female_emp)
+
+    // display the index/position of last female employee 
+    let last_female_emp_ind = employees.findLastIndex((emp) => emp.gender == 'female');
+    console.log('last_female_emp_ind: ', last_female_emp_ind)
+
+    // display all the female employees
+    let all_female_emp = employees.filter((emp) => emp.gender == 'female');
+    console.log('all_female_emp: ', all_female_emp)
 </script>
