@@ -1,0 +1,20 @@
+<script>
+    let numArr = [10, 20, 30, 40, 50];
+    console.log(numArr.indexOf(30)); // 2
+
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai']
+    console.log(cars.indexOf('Honda')); // 1
+
+    let employees = [
+        { id: 1, name: 'Amit Sharma', role: 'Manager', salary: 85000, status: 'Active', gender: 'male' },
+        { id: 2, name: 'Priya Verma', role: 'Developer', salary: 65000, status: 'Active', gender: 'female' },
+        { id: 3, name: 'Rahul Mehta', role: 'Tester', salary: 38000, status: 'Inactive', gender: 'male' },
+        { id: 4, name: 'Sneha Iyer', role: 'Developer', salary: 42000, status: 'Inactive', gender: 'female' },
+        { id: 5, name: 'Karan Singh', role: 'Manager', salary: 52000, status: 'Active', gender: 'male' },
+        { id: 6, name: 'Neha Gupta', role: 'Tester', salary: 72000, status: 'Active', gender: 'female' }
+    ];
+    console.log(employees.indexOf({ name: 'Rahul Mehta' })); // No
+
+    // when array has primitives(number,string) indexOf() can be used to find the index#
+    // when array has non-primitives(object) findIndex() can be used to find the index#
+</script>
