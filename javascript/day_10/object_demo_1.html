@@ -1,0 +1,17 @@
+<script>
+  let user = { name: "sachin", age: 35, add: "mumbai" };
+
+  console.log(user.name);
+  console.log(user["name"]);
+
+  let a = "name";
+  console.log(user.a); // looks for 'a' key
+  console.log(user[a]); // looks for 'name' key
+
+  for (key in user) {
+    console.log(key + " ====== " + user.key);
+    console.log(key + " ====== " + user[key]);
+  }
+
+  console.log('dob' in user); // false
+</script>

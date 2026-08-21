@@ -33,3 +33,7 @@ Passcode: 54$$yipo
 day_09_aug_19:
 https://zoom.us/rec/share/DkuPlOYjEIqSCcYByxLqX1pg_VqYbmutGTWUr0QT4J1PR6bVx1ysrJZR2dfyc9jZ.w_R1PGlULeWel1Dk 
 Passcode: EX=7jR?p
+
+day_10_aug_21:
+https://zoom.us/rec/share/IrLfuiHKhjM3jgMNbd-eddgaqbbp8SNbz4OJ0pwvwu6MnUXfR_5xSB0jOFuHV67P.JJMJunozyexBh7rc 
+Passcode: Xl1iUs?9

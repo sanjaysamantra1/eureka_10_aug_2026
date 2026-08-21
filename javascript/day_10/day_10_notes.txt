@@ -1,0 +1,100 @@
+Array instance functions: 
+at(),concat(),entries(),every(),fill(),filter(),find(),findLast(),findIndex(),flat(),
+flatMap(),forEach(),includes(),indexOf(),join(),keys(),lastIndexOf(),map(),pop(),push()
+reduce(), reverse(), shift(),slice(),sort(),some(), splice(),unshift(),values()
+
+
+Array Mutability/Immutability
+============================
+1. Even when declared as const, the elements of an array can be changed, added, or removed. However, the reference to the array cannot be reassigned.
+	const arr = [1, 2, 3];
+	arr[0] = 42;
+	arr.push(4); // Mutating the array (allowed)
+	console.log(arr); // [42, 2, 3, 4]
+	// Reassigning the array (not allowed with `const`)
+	arr = [5, 6, 7]; // TypeError: Assignment to constant variable.
+
+2. Immutability (Freezing an Array) (Object.freeze() is shallow, meaning nested objects or arrays are still mutable)
+	const arr = Object.freeze([1, 2, 3]);
+	arr[0] = 42; // Attempting to mutate the array
+	arr.push(4); // TypeError: Cannot add property 3, object is not extensible
+	console.log(arr); // [1, 2, 3]
+	
+3. create new arrays instead of modifying existing ones. (map(), filter() , spread operator)
+    const arr = [1, 2, 3];
+	const newArr = [...arr, 4]; // Adds 4 without modifying the original
+	console.log(newArr); // [1, 2, 3, 4]
+	console.log(arr);    // [1, 2, 3] (unchanged)
+
+
+
+
+Array Copy
+==========
+let arr1 = [10, 20];
+let arr2 = arr1;  // address/reference copy ( Not value copy)
+-A new array is not being created, rather same address is being assigned to arr2
+-Both arr1 & arr2 are holding the same address
+
+let arr1 = [10, 20, [30, 31]];
+let arr2 = [...arr1]; // value copy - shallow copy
+
+let arr3 = [10, 20, [30, 31]];
+let arr4 = structuredClone(arr3); // value copy - Deep Copy
+
+-A shallow copy of an array is a copy whose nested elements share the same references.
+ (Nested arrays will not be copied by value)
+-A deep copy of an array is a copy whose nested elements do not share the same references.
+
+
+
+
+'Object' class
+==============
+-Objects are variables that can contain many values inside it.
+-Collection of properties & values. 
+   ex: {prop1:val1,prop2:val2}
+-Object properties are written in 'key:value' pairs. 
+  ex: let user = {name:'sachin' , age:35, add:'mumbai'}
+-we can access object properties in two ways:
+	objectName.propertyName;       user.name;
+	objectName["propertyName"];    user['age'];
+-object properties are case sensitive
+	let obj = {a:10,b:20};
+	console.log(obj.a); // 10 
+	console.log(obj.A); // undefined
+-4 ways to create javascript object
+   1. Object Literal    ex: var obj1 = {};
+   2. Object create()   ex: var obj2 = Object.create({});
+   3. Object Class	    ex: var obj3 = new Object();
+   4. Using Class		ex: var obj4 = new Employee();
+-How to get the length of the object
+	Object.keys(obj).length;
+	
+-How to check if a property exists in an object
+ console.log(propertyName in obj)   (also includes prototype properties)
+ obj.hasOwnProperty(propertyName)   (doesn't includes prototype properties)
+ 
+-a property descriptor is the metadata/configuration that controls how an object property behaves
+    Object.getOwnPropertyDescriptor(object, propertyName)
+	Object.defineProperty(user, "name",{value:"sanjay", writable: false});
+	Object.defineProperty(user, "password",{value:"secret", enumerable: false});
+	
+-getters & setters
+ A getter runs when we read a property, A setter runs when we assign a value to a property
+
+ 
+-Object class static functions : 
+	assign() - Copies properties from one or more source objects to a target object.
+	create() -  creates a new object, using an existing object as the prototype of the newly created object
+	freeze() - Freezes an object. neither the structure nor values can be changed. (shallow)
+	isFrozen() - Determines if an object was frozen
+	seal()  - structure of the object cann't be modified, value of the properties can be changed.
+	isSealed() - Determines if an object is sealed.
+	preventExtensions() -new properties cann't be added to an object, properties can be deleted, value of the properties can be changed
+    isExtensible() - Determines if extending of an object is allowed
+	keys()	- Returns an array of keys
+	values() - Returns an array of values
+	entries() - returns an array of [key, value] pairs
+	fromEntries() - transforms an array/Map into an Object
+	groupBy(items, callbackFn) - groups the data, the callbackFn should return a groupName

@@ -1,0 +1,16 @@
+<script>
+  const a = 10;
+  //   a = 15;
+  console.log("a: ", a);
+
+  const arr = [10, 20];
+  arr.push(30, 40); // even though arr is declared using const, its still modifiable
+  console.log(arr)
+
+  let cars = ["Tata", "Honda"];
+  Object.freeze(cars);
+  delete cars[1];
+  cars.push('maruti')
+  cars.push('Toyota')
+  console.log(cars)
+</script>
