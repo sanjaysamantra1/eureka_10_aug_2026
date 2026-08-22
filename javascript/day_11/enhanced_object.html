@@ -1,0 +1,18 @@
+<script>
+  // ES_5
+  function createLaptop(brand, model, year, price) {
+    return {
+      brand: brand,
+      model: model,
+      year: year,
+      price: price,
+    };
+  }
+  console.log(createLaptop("HP", "ProBook", 2020, 40000));
+
+  // ES_6
+  function makeLaptop(brand, model, year, price) {
+    return {brand, model, year, price};
+  }
+  console.log(makeLaptop("HP", "ProBook", 2020, 40000));
+</script>

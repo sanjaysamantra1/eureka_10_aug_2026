@@ -37,3 +37,7 @@ Passcode: EX=7jR?p
 day_10_aug_21:
 https://zoom.us/rec/share/IrLfuiHKhjM3jgMNbd-eddgaqbbp8SNbz4OJ0pwvwu6MnUXfR_5xSB0jOFuHV67P.JJMJunozyexBh7rc 
 Passcode: Xl1iUs?9
+
+day_11_aug_22:
+https://zoom.us/rec/share/I0SXebYp94pcpOeupkItUje1DVc1j6afTl5QpJJ9jXK_veZOFNDTvd1_m_4iDe6U.fDQDjokcolyk748W 
+Passcode: 6Vgyww^P
