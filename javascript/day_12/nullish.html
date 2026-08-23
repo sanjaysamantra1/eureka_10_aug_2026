@@ -1,0 +1,29 @@
+<script>
+  function demo1(a, b, c) {
+    a = a || 0;
+    b = b || 0;
+    c = c || 50;
+    console.log(a, b, c);
+  }
+  demo1(10, 20);
+  demo1(10, 20, 0);
+  demo1(10, 20, false);
+  demo1(10, 20, null);
+  demo1(10, 20, NaN);
+  demo1(10, 20, "");
+  /* 
+    ||  use the value 50 if the provided value to 'c' is any falsy values
+    ??  use the value 50 only if the provided value is undefined/null
+  */
+  console.log(("=============="))
+  function demo1(a, b, c) {
+    c = c ?? 50;
+    console.log(a, b, c);
+  }
+  demo1(10, 20);
+  demo1(10, 20, 0);
+  demo1(10, 20, false);
+  demo1(10, 20, null);
+  demo1(10, 20, NaN);
+  demo1(10, 20, "");
+</script>
