@@ -10,14 +10,7 @@ ES-6 Features (ES-2015)
 8. Destructuring (Array & Object)
 9. Enhanced Object Literals
 10. Classes
-11. Modules (import/export)
-12. Dynamic Import
-13. Optional Chaining (safer deep property access)
-14. Nullish Coalescing (use fallback only for undefined/null)
-15. Map & Set , WeakMap & WeakSet
-16. Promise , async-await
-17. Generators
-18. Proxy & Reflect
+
 
 
 OOP
