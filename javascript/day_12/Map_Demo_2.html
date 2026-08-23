@@ -1,0 +1,14 @@
+<script>
+  let str = "entertainment";
+
+  // we can solve this using {} or Map
+  let obj = {};
+  for (char of str) {
+    if (obj[char]) {
+      obj[char] = obj[char] + 1;
+    } else {
+      obj[char] = 1;
+    }
+  }
+  console.log(obj);
+</script>
