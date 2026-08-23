@@ -1,5 +1,5 @@
 
-export function add(a, b) {
+export default function add(a, b) {
   console.log(`Addition of ${a} & ${b} is ${a + b}`);
 }
 export function sub(a, b) {

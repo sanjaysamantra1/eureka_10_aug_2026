@@ -1,0 +1,10 @@
+<script>
+  let user = { name: "Virat Kohli", age: 40, role: "Cricketer" };
+
+  console.log("Program execution starts here...");
+  console.log(user.name);
+  console.log(user.email); // undefined - 1st level property
+  console.log(user.phone); // undefined - 1st level property
+  console.log(user?.address?.city); // error if ?. is not used
+  console.log("Program execution ends here...");
+</script>

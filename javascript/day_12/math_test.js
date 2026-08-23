@@ -1,5 +1,5 @@
-import { add, sub, mul } from "./math.js";
+import addition, { sub, mul } from "./math.js";
 
-add(10, 20);
+addition(10, 20);
 sub(10, 20);
 mul(10, 20);
