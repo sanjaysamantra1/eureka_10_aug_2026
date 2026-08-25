@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Categories from "./components/categories/Categories";
 import Carousel from "./components/carousel/Carousel";
