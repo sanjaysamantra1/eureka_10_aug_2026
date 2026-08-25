@@ -1,7 +1,6 @@
-import React from 'react'
 
 export default function Body() {
-  return (
-    <div>Body</div>
-  )
+  return <div style={{minHeight:'300px'}}>
+    This is Body Component
+  </div>
 }

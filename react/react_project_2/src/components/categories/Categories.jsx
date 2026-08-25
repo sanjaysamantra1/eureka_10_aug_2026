@@ -35,7 +35,6 @@ export default function Categories() {
         <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-new.svg" alt="" />
         <div>2 wheeler</div>
       </div>
-      <hr/>
     </div>
   </div>
 }
