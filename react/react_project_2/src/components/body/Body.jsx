@@ -1,6 +1,8 @@
+import DataBinding from "../databinding/DataBinding";
 
 export default function Body() {
   return <div style={{minHeight:'300px'}}>
-    This is Body Component
+      {/* <div>This is Body Component</div> */}
+      <DataBinding/>
   </div>
 }

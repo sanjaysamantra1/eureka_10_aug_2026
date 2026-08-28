@@ -49,3 +49,7 @@ Passcode: pL1$B85D
 day_13_aug_24: (react_1)
 https://zoom.us/rec/share/KqgVwu5yiluj6NkSn6wJekLGuE1VWxbiH90JnPPkO0ag9-cUj51-MOr9HGv4cffm.zPUFQEhGB3kAd9Ce 
 Passcode: qL6qEW!0
+
+day_14_aug_28: (react_2)
+https://zoom.us/rec/share/E-7lOHoxmsawdaB97G3dgC4o8gsfuStiPs2FmnYSdvAaCfVZdQFMUvV4FlXydAhy.RHTrkOCp4d1GzFAl 
+Passcode: 9%KT3IHw

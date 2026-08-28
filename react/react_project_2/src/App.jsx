@@ -9,8 +9,8 @@ export default function App() {
     <div>
       {/* <h3>This is App Component</h3> */}
       <Navbar />
-      <Categories />
-      <Carousel />
+      {/* <Categories /> */}
+      {/* <Carousel /> */}
       <Body />
       <Footer />
     </div>
