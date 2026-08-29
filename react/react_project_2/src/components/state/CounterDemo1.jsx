@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CounterDemo1() {
   let count = 1; // count - is it state variable - No
   // Count - Local Variable, UI is not re-renedered
