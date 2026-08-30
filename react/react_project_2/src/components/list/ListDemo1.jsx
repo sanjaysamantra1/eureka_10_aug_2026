@@ -10,5 +10,13 @@ export default function ListDemo1() {
             return <li key={ind}>{country}</li>
         })}
     </ul>
+    <hr/>
+
+    <h3>Country Dropdown:</h3>
+    <select>
+        {countryArr.map((country,ind)=>{
+            return <option key={ind}>{country}</option>
+        })}
+    </select>
   </>
 }

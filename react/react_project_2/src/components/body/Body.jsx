@@ -1,5 +1,7 @@
 import DataBinding from "../databinding/DataBinding";
+import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
+import UserList from "../list/UserList";
 import CounterDemo1 from "../state/CounterDemo1";
 import CounterDemo2 from "../state/CounterDemo2";
 import CounterDemo3 from "../state/CounterDemo3";
@@ -8,7 +10,7 @@ import StateAssignment1 from "../state/StateAssignment1";
 import StateAssignment2 from "../state/StateAssignment2";
 
 export default function Body() {
-  return <div style={{minHeight:'300px'}}>
+  return <div style={{minHeight:'300px', padding:'10px'}}>
       {/* <div>This is Body Component</div> */}
       {/* <DataBinding/> */}
       {/* <CounterDemo1/> */}
@@ -17,6 +19,8 @@ export default function Body() {
       {/* <EvenOdd/> */}
       {/* <StateAssignment1/> */}
       {/* <StateAssignment2/> */}
-      <ListDemo1/>
+      {/* <ListDemo1/> */}
+      {/* <EmployeeList/> */}
+      <UserList/>
   </div>
 }
