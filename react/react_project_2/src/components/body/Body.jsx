@@ -21,8 +21,8 @@ export default function Body() {
       {/* <StateAssignment1/> */}
       {/* <StateAssignment2/> */}
       {/* <ListDemo1/> */}
-      {/* <EmployeeList/> */}
+      <EmployeeList/>
       {/* <UserList/> */}
-      <ProductList/>
+      {/* <ProductList/> */}
   </div>
 }
