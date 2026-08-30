@@ -7,15 +7,15 @@ export default function ProductList() {
     <div className="row">
         {productArr.map(product=>{
             return <div className="col-sm-3" key={product.id}>
-                <div class="card">
-                    <img src={product.image} class="card-img-top" alt="..." />
-                    <div class="card-body text-center">
-                        <h5 class="card-title">{product.category}</h5>
-                        <p class="card-text">{product.title}</p>
-                        <p class="card-text">{product.description}</p>
-                        <p class="card-text">{product.price}</p>
-                        <p class="card-text">{product.rating.rate}</p>
-                        <a href="#" class="btn btn-primary">Details</a>
+                <div className="card">
+                    <img src={product.image} className="card-img-top" alt="..." />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">{product.category}</h5>
+                        <p className="card-text">{product.title}</p>
+                        <p className="card-text">{product.description}</p>
+                        <p className="card-text">{product.price}</p>
+                        <p className="card-text">{product.rating.rate}</p>
+                        <a href="#" className="btn btn-primary">Details</a>
                     </div>
                 </div>
             </div>
