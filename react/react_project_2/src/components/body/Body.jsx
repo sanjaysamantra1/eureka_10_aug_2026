@@ -1,6 +1,7 @@
 import DataBinding from "../databinding/DataBinding";
 import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
+import ProductList from "../list/ProductList";
 import UserList from "../list/UserList";
 import CounterDemo1 from "../state/CounterDemo1";
 import CounterDemo2 from "../state/CounterDemo2";
@@ -21,6 +22,7 @@ export default function Body() {
       {/* <StateAssignment2/> */}
       {/* <ListDemo1/> */}
       {/* <EmployeeList/> */}
-      <UserList/>
+      {/* <UserList/> */}
+      <ProductList/>
   </div>
 }
