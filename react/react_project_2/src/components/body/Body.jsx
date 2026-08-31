@@ -3,6 +3,7 @@ import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
 import ProductList from "../list/ProductList";
 import UserList from "../list/UserList";
+import Greet from "../props/Greet";
 import CounterDemo1 from "../state/CounterDemo1";
 import CounterDemo2 from "../state/CounterDemo2";
 import CounterDemo3 from "../state/CounterDemo3";
@@ -21,8 +22,12 @@ export default function Body() {
       {/* <StateAssignment1/> */}
       {/* <StateAssignment2/> */}
       {/* <ListDemo1/> */}
-      <EmployeeList/>
+      {/* <EmployeeList/> */}
       {/* <UserList/> */}
       {/* <ProductList/> */}
+      <Greet name="Nehanth" age="45" >
+        <div>Good Morning</div>
+        <div>another div</div>
+      </Greet>
   </div>
 }
