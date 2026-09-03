@@ -1,4 +1,6 @@
 import DataBinding from "../databinding/DataBinding";
+import EventDemo1 from "../events/EventDemo1";
+import Login from "../form/Login";
 import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
 import ProductList from "../list/ProductList";
@@ -25,9 +27,11 @@ export default function Body() {
       {/* <EmployeeList/> */}
       {/* <UserList/> */}
       {/* <ProductList/> */}
-      <Greet name="Nehanth" age="45" >
+      {/* <Greet name="Nehanth" age="45" >
         <div>Good Morning</div>
         <div>another div</div>
-      </Greet>
+      </Greet> */}
+      {/* <EventDemo1/> */}
+      <Login/>
   </div>
 }
