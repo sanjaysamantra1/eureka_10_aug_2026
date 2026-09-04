@@ -69,3 +69,11 @@ Passcode: =P5v7y0C
 day_18_sept_1: (react_6)
 https://zoom.us/rec/share/wa_STLeeZ_i0fJoYTTb0zNce-hfkuuhjF1gKEHLqjyhweSvhY8nAav5yy9vkhi4z.80s7OYTR8ytUhWNU 
 Passcode: WK0J%yuU
+
+day_19_sept_3: (react_7)
+https://zoom.us/rec/share/WWq1kO2reUWF1YutKexUdX40YXHe_w1JTftDPYWM3M0zlM_yf11sVaX4LDtFMZdQ.RA7oZkfGOMKRjoro 
+Passcode: !7x1KiM*
+
+day_20_sept_4: (react_8)
+https://zoom.us/rec/share/c-xEpr3xChzBb7g0i6CzPE_NeKmmUNY2dnnYXFnUd57HoJZNxUYRGOml9AKNif5Z.-g7j0zsrJwlGqNAx 
+Passcode: 3Ug1^7p2
