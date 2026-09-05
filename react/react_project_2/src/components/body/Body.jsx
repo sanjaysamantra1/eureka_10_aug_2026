@@ -41,7 +41,7 @@ export default function Body() {
       {/* <Login/> */}
       {/* <PureDemo1/> */}
       {/* <PureDemo2/> */}
-      {/* <ParentDemo/> */}
-      <UseMemoDemo1/>
+      <ParentDemo/>
+      {/* <UseMemoDemo1/> */}
   </div>
 }
