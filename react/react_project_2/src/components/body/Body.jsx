@@ -1,8 +1,12 @@
+import { useState } from "react";
 import DataBinding from "../databinding/DataBinding";
 import EventDemo1 from "../events/EventDemo1";
 import EventDemo2 from "../events/EventDemo2";
 import Login from "../form/Login";
+import DigitalClock from "../hooks/DigitalClock";
 import ParentDemo from "../hooks/ParentDemo";
+import UseEffectDemo1 from "../hooks/UseEffectDemo1";
+import UseEffectDemo2 from "../hooks/UseEffectDemo2";
 import UseMemoDemo1 from "../hooks/UseMemoDemo1";
 import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
@@ -19,6 +23,8 @@ import StateAssignment1 from "../state/StateAssignment1";
 import StateAssignment2 from "../state/StateAssignment2";
 
 export default function Body() {
+  const [flag,setFlag] = useState(true);
+
   return <div style={{minHeight:'300px', padding:'10px'}}>
       {/* <div>This is Body Component</div> */}
       {/* <DataBinding/> */}
@@ -41,7 +47,11 @@ export default function Body() {
       {/* <Login/> */}
       {/* <PureDemo1/> */}
       {/* <PureDemo2/> */}
-      <ParentDemo/>
+      {/* <ParentDemo/> */}
       {/* <UseMemoDemo1/> */}
+      {/* <UseEffectDemo1/> */}
+      {/* <UseEffectDemo2/> */}
+      <button onClick={()=>setFlag(!flag)}>toggle Flag</button>
+      { flag ? <DigitalClock/> : null}
   </div>
 }
