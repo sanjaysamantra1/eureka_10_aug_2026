@@ -3,6 +3,7 @@ import EventDemo1 from "../events/EventDemo1";
 import EventDemo2 from "../events/EventDemo2";
 import Login from "../form/Login";
 import ParentDemo from "../hooks/ParentDemo";
+import UseMemoDemo1 from "../hooks/UseMemoDemo1";
 import EmployeeList from "../list/EmployeeList";
 import ListDemo1 from "../list/ListDemo1";
 import ProductList from "../list/ProductList";
@@ -40,6 +41,7 @@ export default function Body() {
       {/* <Login/> */}
       {/* <PureDemo1/> */}
       {/* <PureDemo2/> */}
-      <ParentDemo/>
+      {/* <ParentDemo/> */}
+      <UseMemoDemo1/>
   </div>
 }
