@@ -81,3 +81,7 @@ Passcode: 3Ug1^7p2
 day_21_sept_5: (react_9)
 https://zoom.us/rec/share/3ANx41EGP5FseJfDmCe__9RB1JnwC3UCE-WCtiAumuownK8fg5pxB-Y8KLPTh8w2.uwHvLJ0CP-gtFUmb 
 Passcode: 3.CdbttK
+
+day_22_sept_8: (react_10)
+https://zoom.us/rec/share/NNfZJg9Tdg-TA3SeIdP92sH2h5ZOXWdbXSwNEaNPCL8SYMuXD6wXZafqNNizZEav.MSELEYQFQuKR_4ob 
+Passcode: GpcT.=2^
