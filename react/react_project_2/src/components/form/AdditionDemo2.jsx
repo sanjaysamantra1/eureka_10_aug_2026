@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 
 export default function AdditionDemo2() { // uncontrolled form
-  const inputRef1 = useRef(null)
-  const inputRef2 = useRef(null)
+  const inputRef1 = useRef()
+  const inputRef2 = useRef()
 
   const addition = () => {
     const val1 = +(inputRef1.current?.value || 0);
@@ -13,8 +13,8 @@ export default function AdditionDemo2() { // uncontrolled form
   };
 
   return <div>
-    num1: <input ref={inputRef1}  />
-    num2: <input ref={inputRef2} />
+    num1: <input ref={inputRef1} defaultValue={10} />
+    num2: <input ref={inputRef2} defaultValue={20} />
     <button onClick={addition}>Add</button>
   </div>
 }
