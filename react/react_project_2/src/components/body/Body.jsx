@@ -21,6 +21,7 @@ import PureDemo1 from "../state/PureDemo1";
 import PureDemo2 from "../state/PureDemo2";
 import StateAssignment1 from "../state/StateAssignment1";
 import StateAssignment2 from "../state/StateAssignment2";
+import FormDemo1 from "../form/FormDemo1";
 
 export default function Body() {
   const [flag,setFlag] = useState(true);
@@ -51,7 +52,8 @@ export default function Body() {
       {/* <UseMemoDemo1/> */}
       {/* <UseEffectDemo1/> */}
       {/* <UseEffectDemo2/> */}
-      <button onClick={()=>setFlag(!flag)}>toggle Flag</button>
-      { flag ? <DigitalClock/> : null}
+      {/* <button onClick={()=>setFlag(!flag)}>toggle Flag</button>
+      { flag ? <DigitalClock/> : null} */}
+      <FormDemo1/>
   </div>
 }
