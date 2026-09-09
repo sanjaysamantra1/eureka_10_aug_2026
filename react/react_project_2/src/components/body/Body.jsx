@@ -25,42 +25,46 @@ import FormDemo1 from "../form/FormDemo1";
 import AdditionDemo1 from "../form/AdditionDemo1";
 import AdditionDemo2 from "../form/AdditionDemo2";
 import FormDemo2 from "../form/FormDemo2";
+import HttpDemo1 from "../http/HttpDemo1";
+import UserListHttp from "../http/UserListHttp";
 
 
 export default function Body() {
-  const [flag,setFlag] = useState(true);
+  const [flag, setFlag] = useState(true);
 
-  return <div style={{minHeight:'300px', padding:'10px'}}>
-      {/* <div>This is Body Component</div> */}
-      {/* <DataBinding/> */}
-      {/* <CounterDemo1/> */}
-      {/* <CounterDemo2/> */}
-      {/* <CounterDemo3 /> */}
-      {/* <EvenOdd/> */}
-      {/* <StateAssignment1/> */}
-      {/* <StateAssignment2/> */}
-      {/* <ListDemo1/> */}
-      {/* <EmployeeList/> */}
-      {/* <UserList/> */}
-      {/* <ProductList/> */}
-      {/* <Greet name="Nehanth" age="45" >
+  return <div style={{ minHeight: '300px', padding: '10px' }}>
+    {/* <div>This is Body Component</div> */}
+    {/* <DataBinding/> */}
+    {/* <CounterDemo1/> */}
+    {/* <CounterDemo2/> */}
+    {/* <CounterDemo3 /> */}
+    {/* <EvenOdd/> */}
+    {/* <StateAssignment1/> */}
+    {/* <StateAssignment2/> */}
+    {/* <ListDemo1/> */}
+    {/* <EmployeeList/> */}
+    {/* <UserList/> */}
+    {/* <ProductList/> */}
+    {/* <Greet name="Nehanth" age="45" >
         <div>Good Morning</div>
         <div>another div</div>
       </Greet> */}
-      {/* <EventDemo1/> */}
-      {/* <EventDemo2/> */}
-      {/* <Login/> */}
-      {/* <PureDemo1/> */}
-      {/* <PureDemo2/> */}
-      {/* <ParentDemo/> */}
-      {/* <UseMemoDemo1/> */}
-      {/* <UseEffectDemo1/> */}
-      {/* <UseEffectDemo2/> */}
-      {/* <button onClick={()=>setFlag(!flag)}>toggle Flag</button>
+    {/* <EventDemo1/> */}
+    {/* <EventDemo2/> */}
+    {/* <Login/> */}
+    {/* <PureDemo1/> */}
+    {/* <PureDemo2/> */}
+    {/* <ParentDemo/> */}
+    {/* <UseMemoDemo1/> */}
+    {/* <UseEffectDemo1/> */}
+    {/* <UseEffectDemo2/> */}
+    {/* <button onClick={()=>setFlag(!flag)}>toggle Flag</button>
       { flag ? <DigitalClock/> : null} */}
-      {/* <FormDemo1/> */}
-      {/* <AdditionDemo1/><hr/> */}
-      {/* <AdditionDemo2 /> */}
-      <FormDemo2/>
+    {/* <FormDemo1/> */}
+    {/* <AdditionDemo1/><hr/> */}
+    {/* <AdditionDemo2 /> */}
+    {/* <FormDemo2/> */}
+    {/* <HttpDemo1 /> */}
+    <UserListHttp/>
   </div>
 }
