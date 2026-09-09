@@ -12,8 +12,8 @@ export default function UserListHttp() {
     return <>
         <h3 className="text-center">User List Using Http</h3>
         <button onClick={fetchUsers}>Fetch Users</button>
-        
-        <table className="table table-bordered">
+
+        <table className="table table-bordered mt-2">
             <tbody>
                 {users.map(user => (
                     <tr key={user.id}>

@@ -27,6 +27,7 @@ import AdditionDemo2 from "../form/AdditionDemo2";
 import FormDemo2 from "../form/FormDemo2";
 import HttpDemo1 from "../http/HttpDemo1";
 import UserListHttp from "../http/UserListHttp";
+import ProductListHttp from "../http/ProductListHttp";
 
 
 export default function Body() {
@@ -65,6 +66,7 @@ export default function Body() {
     {/* <AdditionDemo2 /> */}
     {/* <FormDemo2/> */}
     {/* <HttpDemo1 /> */}
-    <UserListHttp/>
+    {/* <UserListHttp/> */}
+    <ProductListHttp/>
   </div>
 }
