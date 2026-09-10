@@ -89,3 +89,7 @@ Passcode: GpcT.=2^
 day_23_sept_9: (react_11)
 https://zoom.us/rec/share/DYrPyhSXhE0uyjY2WhYI2QArWTs5FHTqR-35yCQkO4KKZCqBU3XIeNOj8d9BwnAE.m674Y3Ffocu_Ukl2 
 Passcode: Ed^8^wWe
+
+day_23_sept_10: (react_12)
+https://zoom.us/rec/share/7VHhmCpVoDlIwJgLoUkVV2tubxob3_fiTD527JzGvDVyVfML13x-o4-kcY2_F2XB.-1LZ2iMifJlecbab 
+Passcode: J3S+Q8r+
