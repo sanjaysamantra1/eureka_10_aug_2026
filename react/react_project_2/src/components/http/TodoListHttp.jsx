@@ -5,7 +5,7 @@ export default function TodoListHttp() {
     const [todoArr, setToDoArr] = useState([]);
 
     const fetchTodoData = async () => {
-        const response = await client.get('/todos')
+        const response = await client.get('/todos', { skipLogger: true })
         setToDoArr(response.data);
         console.log(response.data)
     }

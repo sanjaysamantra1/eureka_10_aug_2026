@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react'
 
 export default function UserListHttp() {
@@ -9,9 +10,18 @@ export default function UserListHttp() {
         console.log(data);
         setUsers(data);
     }
+    const fetchUsersWithQueryParam = async () => {
+        let response = await axios.get('https://jsonplaceholder.typicode.com/users', {
+            params: {
+                email: 'Shanna@melissa.tv'
+            }
+        })
+        setUsers(response.data);
+    }
     return <>
         <h3 className="text-center">User List Using Http</h3>
-        <button onClick={fetchUsers}>Fetch Users</button>
+        <button onClick={fetchUsers} className='mx-1'>Fetch Users</button>
+        <button onClick={fetchUsersWithQueryParam}>Fetch Users-2</button>
 
         <table className="table table-bordered mt-2">
             <tbody>

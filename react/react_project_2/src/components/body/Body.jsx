@@ -29,6 +29,7 @@ import HttpDemo1 from "../http/HttpDemo1";
 import UserListHttp from "../http/UserListHttp";
 import ProductListHttp from "../http/ProductListHttp";
 import TodoListHttp from "../http/TodoListHttp";
+import ParallelHttpCall from "../http/ParallelHttpCall";
 
 
 export default function Body() {
@@ -70,5 +71,6 @@ export default function Body() {
     {/* <UserListHttp/> */}
     {/* <ProductListHttp/> */}
     <TodoListHttp/>
+    {/* <ParallelHttpCall/> */}
   </div>
 }
