@@ -30,6 +30,12 @@ import UserListHttp from "../http/UserListHttp";
 import ProductListHttp from "../http/ProductListHttp";
 import TodoListHttp from "../http/TodoListHttp";
 import ParallelHttpCall from "../http/ParallelHttpCall";
+import { Routes, Route } from 'react-router'
+import Home from "../routing/Home";
+import Aboutus from "../routing/Aboutus";
+import Careers from "../routing/Careers";
+import Contactus from "../routing/Contactus";
+import NotFound from "../routing/NotFound";
 
 
 export default function Body() {
@@ -39,7 +45,7 @@ export default function Body() {
     {/* <div>This is Body Component</div> */}
     {/* <DataBinding/> */}
     {/* <CounterDemo1/> */}
-    <CounterDemo2/>
+    {/* <CounterDemo2/> */}
     {/* <CounterDemo3 /> */}
     {/* <EvenOdd/> */}
     {/* <StateAssignment1/> */}
@@ -71,5 +77,13 @@ export default function Body() {
     {/* <ProductListHttp/> */}
     {/* <TodoListHttp/> */}
     {/* <ParallelHttpCall/> */}
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/home" element={<Home />} />
+      <Route exact path="/aboutus" element={<Aboutus />} />
+      <Route exact path="/careers" element={<Careers />} />
+      <Route exact path="/contactus" element={<Contactus />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   </div>
 }
