@@ -39,7 +39,7 @@ export default function Body() {
     {/* <div>This is Body Component</div> */}
     {/* <DataBinding/> */}
     {/* <CounterDemo1/> */}
-    {/* <CounterDemo2/> */}
+    <CounterDemo2/>
     {/* <CounterDemo3 /> */}
     {/* <EvenOdd/> */}
     {/* <StateAssignment1/> */}
@@ -70,7 +70,7 @@ export default function Body() {
     {/* <HttpDemo1 /> */}
     {/* <UserListHttp/> */}
     {/* <ProductListHttp/> */}
-    <TodoListHttp/>
+    {/* <TodoListHttp/> */}
     {/* <ParallelHttpCall/> */}
   </div>
 }

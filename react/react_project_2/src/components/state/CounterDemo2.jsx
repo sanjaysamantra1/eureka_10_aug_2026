@@ -1,20 +1,16 @@
 import { useEffect, useState } from "react";
+import WithLogger from "../hoc/WithLogger";
 
-export default function CounterDemo2() {
+function CounterDemo2() {
   const [count, setCount] = useState(0); // count - State variable
 
   const decrement = () => {
     setCount(count - 1);
-    console.log("After Decrement ", count);
   };
   const increment = () => {
     setCount((prevState) => prevState + 1); // asynchronous
-    console.log("After increment ", count);
   };
 
-  useEffect(() => {
-    console.log("count in useEffect- ", count);
-  });
   return (
     <>
       <div>Counter Example with state variable</div>
@@ -25,6 +21,7 @@ export default function CounterDemo2() {
     </>
   );
 }
+export default WithLogger(CounterDemo2);
 /* 
     1. useState() is an inbuilt function to declare state variables
     2. it takes 1 arguement - Default value
