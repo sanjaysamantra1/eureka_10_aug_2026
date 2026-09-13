@@ -50,8 +50,7 @@ export default function Body() {
     {/* <ProductList/> */}
     {/* <Greet name="Nehanth" age="45" >
         <div>Good Morning</div>
-        <div>another div</div>
-      </Greet> */}
+    </Greet> */}
     {/* <EventDemo1/> */}
     {/* <EventDemo2/> */}
     {/* <Login/> */}

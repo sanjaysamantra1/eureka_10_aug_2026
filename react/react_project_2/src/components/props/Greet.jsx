@@ -1,5 +1,6 @@
 
 import { Children } from "react";
+import WithLogger from "../hoc/WithLogger";
 
 function Greet({ name, age,children }) {
   return (
@@ -10,4 +11,4 @@ function Greet({ name, age,children }) {
   );
 }
 
-export default Greet;
+export default WithLogger(Greet);
