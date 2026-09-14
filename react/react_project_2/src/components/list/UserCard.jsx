@@ -1,7 +1,7 @@
-import React from 'react'
+import { Link } from 'react-router';
 
 export default function UserCard({user}) { // props de-structuring
-  const {username,name,email,phone,address} = user; // object de-structuring
+  const {username,name,email,phone,address,id} = user; // object de-structuring
 
   return <div className="col-sm-3">
                 <div className="card">
@@ -12,7 +12,7 @@ export default function UserCard({user}) { // props de-structuring
                         <p className="card-text">{email}</p>
                         <p className="card-text">{phone}</p>
                         <p className="card-text">{address.city}</p>
-                        <a href="#" className="btn btn-primary">Details</a>
+                        <Link to={`/userdetails/${id}`} className="btn btn-primary">Details</Link>
                     </div>
                 </div>
     </div>

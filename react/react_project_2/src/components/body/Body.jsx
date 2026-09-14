@@ -36,6 +36,10 @@ import Aboutus from "../routing/Aboutus";
 import Careers from "../routing/Careers";
 import Contactus from "../routing/Contactus";
 import NotFound from "../routing/NotFound";
+import UserDetails from "../routing/UserDetails";
+import ProductDetails from "../routing/ProductDetails";
+import PermanentJobs from "../routing/PermanentJobs";
+import ContractJobs from "../routing/ContractJobs";
 
 
 export default function Body() {
@@ -81,8 +85,16 @@ export default function Body() {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/home" element={<Home />} />
       <Route exact path="/aboutus" element={<Aboutus />} />
-      <Route exact path="/careers" element={<Careers />} />
+      <Route exact path="/careers" element={<Careers />} >
+        <Route index element={<PermanentJobs />} />
+        <Route path="/careers/permanent" element={<PermanentJobs />} />
+        <Route path="/careers/contract" element={<ContractJobs />} />
+      </Route>
       <Route exact path="/contactus" element={<Contactus />} />
+      <Route exact path="/users" element={<UserList />} />
+      <Route path="/userdetails/:id" element={<UserDetails />} />
+      <Route exact path="/products" element={<ProductList />} />
+      <Route path="/productdetails" element={<ProductDetails />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </div>

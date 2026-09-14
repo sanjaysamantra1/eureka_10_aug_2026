@@ -5,6 +5,7 @@ import productsArr from './product_data.js'
 import ReactPaginateModule from 'react-paginate'
 const ReactPaginate = ReactPaginateModule.default || ReactPaginateModule;
 import "./ProductsPagination.css";
+import { createSearchParams, useNavigate } from 'react-router';
 
 export default function ProductList() {
     const [itemOffset, setItemOffset] = useState(0);
@@ -26,6 +27,15 @@ export default function ProductList() {
         new Snackbar('Right Click is disabled')
     }
 
+
+    const navigate = useNavigate();
+    const navigateHandler = (id, title, price) => {
+        navigate({
+            pathname: "/productdetails",
+            search: `?${createSearchParams({ id, title, price })}`,
+        });
+    };
+
     return <div onContextMenu={disableRightClick}>
         <h3 className="text-center">Product List</h3>
 
@@ -43,7 +53,9 @@ export default function ProductList() {
                             <p className="card-text text-truncate">{product.description}</p>
                             <p className="card-text">{product.price}</p>
                             <p className="card-text">{product.rating.rate}</p>
-                            <a href="#" className="btn btn-primary">Details</a>
+                            <button className="btn btn-secondary" onClick={() => {
+                                navigateHandler(product.id, product.title, product.price);
+                            }}>details</button>
                         </div>
                     </div>
                 </div>
