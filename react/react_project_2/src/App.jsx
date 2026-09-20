@@ -3,6 +3,7 @@ import Categories from "./components/categories/Categories";
 import Carousel from "./components/carousel/Carousel";
 import Body from "./components/body/Body";
 import Footer from "./components/footer/Footer";
+import { Suspense } from "react";
 
 export default function App() {
   return (
@@ -11,7 +12,9 @@ export default function App() {
       <Navbar />
       {/* <Categories /> */}
       {/* <Carousel /> */}
-      <Body />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Body />
+      </Suspense>
       <Footer />
     </div>
   );

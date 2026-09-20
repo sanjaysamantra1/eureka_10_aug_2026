@@ -1,35 +1,7 @@
-import { useState } from "react";
-import DataBinding from "../databinding/DataBinding";
-import EventDemo1 from "../events/EventDemo1";
-import EventDemo2 from "../events/EventDemo2";
-import Login from "../form/Login";
-import DigitalClock from "../hooks/DigitalClock";
-import ParentDemo from "../hooks/ParentDemo";
-import UseEffectDemo1 from "../hooks/UseEffectDemo1";
-import UseEffectDemo2 from "../hooks/UseEffectDemo2";
-import UseMemoDemo1 from "../hooks/UseMemoDemo1";
-import EmployeeList from "../list/EmployeeList";
-import ListDemo1 from "../list/ListDemo1";
-import ProductList from "../list/ProductList";
+import { lazy, useState } from "react";
+// import ProductList from "../list/ProductList";
+const ProductList = lazy(()=>import('../list/ProductList'))
 import UserList from "../list/UserList";
-import Greet from "../props/Greet";
-import CounterDemo1 from "../state/CounterDemo1";
-import CounterDemo2 from "../state/CounterDemo2";
-import CounterDemo3 from "../state/CounterDemo3";
-import EvenOdd from "../state/EvenOdd";
-import PureDemo1 from "../state/PureDemo1";
-import PureDemo2 from "../state/PureDemo2";
-import StateAssignment1 from "../state/StateAssignment1";
-import StateAssignment2 from "../state/StateAssignment2";
-import FormDemo1 from "../form/FormDemo1";
-import AdditionDemo1 from "../form/AdditionDemo1";
-import AdditionDemo2 from "../form/AdditionDemo2";
-import FormDemo2 from "../form/FormDemo2";
-import HttpDemo1 from "../http/HttpDemo1";
-import UserListHttp from "../http/UserListHttp";
-import ProductListHttp from "../http/ProductListHttp";
-import TodoListHttp from "../http/TodoListHttp";
-import ParallelHttpCall from "../http/ParallelHttpCall";
 import { Routes, Route } from 'react-router'
 import Home from "../routing/Home";
 import Aboutus from "../routing/Aboutus";

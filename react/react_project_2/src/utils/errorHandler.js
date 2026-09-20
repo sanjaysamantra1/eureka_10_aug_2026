@@ -1,5 +1,5 @@
 export function errorHandler(error) {
-    console.log('Error Interceptor called...')
+    // console.log('Error Interceptor called...')
     const status = error.response?.status;
     if (status === 401) {
         window.location.assign('/login');
