@@ -15,9 +15,9 @@ function CounterDemo2() {
     <>
       <div>Counter Example with state variable</div>
 
-      <button onClick={decrement}>-</button>
-      <div>Count: {count}</div>
-      <button onClick={increment}>+</button>
+      <button onClick={decrement}>decrement</button>
+      <span className="mx-2">Count: {count}</span>
+      <button onClick={increment}>increment</button>
     </>
   );
 }

@@ -30,3 +30,9 @@ export function averageMarks(marks) {
     const total = marks.reduce((sum, mark) => sum + mark, 0);
     return total / marks.length;
 }
+
+export let cars = ['Tata', 'Honda']
+
+export function addNewCar(newCar) {
+    cars.push(newCar);
+}
